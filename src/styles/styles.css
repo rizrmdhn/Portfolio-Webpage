@@ -1,0 +1,547 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #393E46;
+    color: #EEEEEE;
+    margin: auto;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+    /* Start of Header Section */
+.Menu {
+    display: none;
+}
+.Header {
+    background-color: #222831;
+    display: flex;
+    width: auto;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    margin: auto;
+    height: 50px;
+    margin-right: 25px;
+    list-style-type: none;
+}
+.nav-list a {
+    display: block;
+    font-size: 25px;
+    padding: 10px 15px;
+    margin-right: 25px;
+    color: #EEEEEE;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.nav-list a:hover {
+    font-weight: 400;
+    font-size: 30px;
+    color: #EEEEEE;
+    background-color: #343c49;
+}
+
+    /*  End of Header Section */
+
+    /* Start of DropDown Line Section*/
+
+#drpbtn {
+    display: none;
+    width: 60px;
+    position: relative;
+    margin: 25px 15px;
+}
+.menu {
+    cursor: pointer;
+}
+.menu > div {
+    background-color: white;
+    height: 4px;
+    margin: 7px 10px;
+}
+.one {
+    width: 40px;
+}
+.two {
+    width: 40px;
+}
+.three {
+    width: 40px;
+}
+    
+    /* End of DropDown Line Section */
+    
+    /*  Start of DropDown Section */
+    
+.dropdown-content { 
+    display: none;
+    position: absolute;
+    background-color: #6B728E;
+    margin: 20px 85px;
+    z-index: 1;
+
+}
+.dropdown-content > a {
+    display: inline;
+    color: white;
+    margin: 15px 6px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 500ms;
+}
+.dropdown-content > a:hover {
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(53, 52, 52);
+    background-color: #9297cc;
+}
+.show {
+    display: block;
+ }
+    
+    /*  End of DropDown Section */
+
+    /*  Start of Profile Section */
+
+.Profile-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 650px;
+    height: 77vh;
+    border-radius: 25px;
+    color: white;
+}
+.Profile-box > h1 {
+    margin: 0 auto;
+}
+.Profile-box > p {
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+    /*  End of Profile Section */
+
+    /*  Start of Project Section */
+
+.Project-header {
+    max-width: 640px;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px auto;
+}
+.Project-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 35px 35px;
+    margin: auto;
+    margin-top: 100px;
+}
+.Project-list {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 45px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.Project-item {
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    margin: auto;
+    background-color: #222831;
+}
+.Project-item > a {
+    text-decoration: none;
+}
+.Project-image {
+    height: calc(100% - 100px);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.Project-title {
+    margin: auto;
+    margin-top: 15px;
+    font-size: 25px;
+    color: #EEEEEE;
+}
+.Stack {
+    display: flex;
+    margin: 10px auto;
+    margin-left: 10px;
+    color: #EEEEEE;
+}
+.Stack > p {
+    font-size: 15px;
+    margin: 5px 2px;
+    margin-right: 10px;
+    width: 85px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    transition: 500ms;
+}
+.Project-item:hover > .Stack > p {
+    margin: 5px 7px;
+    width: 110px;
+    font-size: 20px;
+}
+    /*  End of Project Section */
+
+    /*  Start of Experience Section */
+
+.Experience-box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    width: 100%;
+    height: 76vh;
+}
+.Experience-card {
+    padding: 20px 150px;
+    background-color: #454b55;
+    border-radius: 10px;
+}
+.Experience-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+}
+.Experience-list {
+    width: 100%;
+    height: 100%;
+}
+.Place {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 80px auto auto -90px;
+}
+.Experience {
+    grid-area: 2 / 2 / 3 / 3; 
+    height: 25px;
+    margin: 0 auto auto -90px;
+}
+.Description {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 480px;  
+    margin: 65px auto auto -90px;
+}
+.Year {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 80px auto auto auto;
+}
+.Year > p {
+    font-weight: bold;
+}
+.downline {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 25px auto auto auto;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    background-color: black;
+}
+.line {
+    width: 10px;
+    height: 125px;
+    border-radius: 25px;
+    margin-top: -5px;
+    background-color: rgba(24, 23, 23, 0.438);
+}
+
+    /*  End of Experience Section */
+
+    /*  Start of Social Section */
+
+.Social {
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact {
+    width: 100%;
+}
+.contact > a {
+    font-size: 35px;
+    margin: 0 50px;
+    text-decoration: none;
+    color: #EEEEEE;
+    transition: 500ms;
+}
+.contact > a:hover {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+    /*  End of Social Section */
+
+    /*  Start of Footer Section */
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #454b55;
+    color: #EEEEEE;
+    display: flex;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.warning {
+    font-size: 15px;
+    margin: auto;
+}
+.warning > i {
+    margin: auto;
+}
+    /*  End of Footer Section */
+
+/* For Mobile Screen. */
+@media screen and (max-width: 990px) {
+    .Header {
+        visibility: hidden;
+    }
+    .Menu {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #222831;
+        height: 100px;
+    }
+    #navbar {
+       display: none;
+    }
+    .bg-dark {
+        --bs-bg-opacity: 0;
+        background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    }
+    .btn-primary {
+        --bs-btn-border-color: none;
+    }
+    .btn-close {
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    }
+    .offcanvas-title {
+        font-size: 30px;
+    }
+    .offcanvas-header {
+        background-color: #222831;
+        height: 100px;
+    }
+    .offcanvas-lg {
+        background-color: #393E46;
+    }
+    .offcanvas-body > .nav {
+        --bs-nav-link-color: #EEEEEE;
+        --bs-nav-link-hover-color: #9297cc;
+        font-size: 20px;
+    }
+    .Profile-box {
+        height: 83vh;
+    }
+    .Year {
+        width: 80px;
+        margin: auto auto auto 0;
+    }
+    .Year > p {
+        margin: auto;
+    }
+    .downline {
+        margin: auto auto auto auto;
+    }
+    .Place {
+        margin: auto auto auto 55px;
+    }
+    .Experience {
+        margin: -10px auto 0 55px;
+    }
+    .Description {
+        margin: 45px auto -5px 55px;
+    }
+}
+
+/* A media query. It is used to change the style of the page when the screen size is less than 450px. */
+@media screen and (max-width: 450px) {
+    .Header {
+        margin: auto;
+        width: 450px;
+    }
+    li {
+        display: none;
+    }
+    .offcanvas-header {
+        background-color: #6B728E;
+        height: 75px;
+    }
+    .offcanvas-lg {
+        background-color: #393E46;
+    }
+    .offcanvas-body > .nav {
+        --bs-nav-link-color: white;
+        --bs-nav-link-hover-color: #9297cc;
+    }
+    #drpbtn {
+        display: block;
+        position: relative;
+        margin: 15px 15px;
+    }
+    .Profile-box {
+        width: 100vh;
+        height: 92vh;
+        font-size: 15px;
+        margin: 30px 15px;
+    }
+    .Profile-box > p {
+        font-size: 15px;
+    }
+    .Project-box {
+        padding-left: 15px;
+        width: 420px;
+    }
+    .Project-header {
+        padding: 0;
+        width: 100%;
+        font-size: 25px;
+        margin: 50px 25px;
+    }
+    .Project-item {
+        margin: auto;
+    }
+    .Project-list {
+        margin: auto 15px;
+    }
+    .Experience-box {
+        width: 100vh;
+    }
+    .Experience-card {
+        font-size: 15px;
+        width: 100%;
+    }
+    .Social {
+        height: 100vh;
+    }
+    .contact > a {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .contact > a:hover {
+        font-size: 35px;
+    }
+    .Footer {
+        width: 100vh;
+    }
+}
+
+
+/* A media query. It is used to change the style of the page when the screen size is less than 375px. */
+@media screen and (max-width: 375px) {
+    body {
+        padding: 0;
+    }
+    .Header {
+        margin: auto 0;
+        width: 375px;
+        height: 65px;
+    }
+    li {
+        display: none;
+    }
+    #drpbtn {
+        display: block;
+        position: relative;
+        margin: 15px 15px;
+    }
+    .dropdown-content {
+        margin-top: 25px;
+    }
+    .dropdown-content > a {
+        font-size: 18px;
+    }
+    .Profile-box {
+        width: 375px;
+        font-size: 15px;
+        margin: auto;
+    }
+    .Profile-box > p {
+        font-size: 10px;
+    }
+    .Project-box {
+        padding: 0;
+        width: 375px;
+        margin: auto;
+    }
+    .Project-header {
+        padding: 0;
+        width: 100%;
+        font-size: 20px;
+        margin: 30px auto;
+    }
+    .Project-item {
+        margin: auto;
+    }
+    .Project-list {
+        margin: auto;
+    }
+    .Footer {
+        padding: 0;
+        margin: auto;
+        width: 375px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+    .contact:hover {
+        font-weight: bold;
+    }
+    .warning { 
+        display: none;
+    }
+}
