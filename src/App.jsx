@@ -1,7 +1,7 @@
 import React from "react";
 import { ExperienceData } from "./utils/experience";
 import { ProjectData } from "./utils/project";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ExperienceBox from "./components/ExperienceBox"
 import Social from "./components/Social";
 import Header from "./components/Header";
@@ -46,17 +46,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
-          <DropMenu />
-          <Header />
+        <DropMenu />
+        <Header />
+        <HashRouter>
           <Routes>
-            <Route exact path="/" element={<ProfileBox />} />
-            <Route exact path="/Project" element={<ProjectBox projects={this.state.projects} />} />
-            <Route exact path="/Experience" element={<ExperienceBox experiences={this.state.experiences} />} />
-            <Route exact path='/Social' element={<Social />} />
+            <Route path="/" element={<ProfileBox />} />
+            <Route path="/Project" element={<ProjectBox projects={this.state.projects} />} />
+            <Route path="/Experience" element={<ExperienceBox experiences={this.state.experiences} />} />
+            <Route path='/Social' element={<Social />} />
           </Routes>
-          <Footer />
-        </BrowserRouter>
+        </HashRouter>
+        <Footer />
       </div>
     )
   }
