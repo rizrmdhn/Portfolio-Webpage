@@ -5,7 +5,7 @@ const ExperienceData = () => ([
         month: "Jun - Aug",
         place: "PT. Telkom Witel Samarinda",
         title: "Data Management",
-        desc: "Internship program selama 3 bulan, membantu melakukan validasi dan menginput data pelanggan yang diterima",
+        desc: "Internship program selama 3 bulan. Penginputan data pelangan baru melalui aplikasi sales telkom dan regional telkom pada saat odpnya tidak muncul.",
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const ExperienceData = () => ([
         month: "Feb - Aug",
         place: "Smart Computer Samarinda",
         title: "Teknisi  Komputer",
-        desc: "Internship program selama 5 bulan, melakukan troubleshooting pada komputer yang rusak, merakit komputer, dan melakukan instalasi pada komputer",
+        desc: "Internship program selama 5 bulan, melakukan troubleshooting pada komputer yang rusak, merakit komputer, dan melakukan instalasi pada komputer.",
     },
 ]);
 
