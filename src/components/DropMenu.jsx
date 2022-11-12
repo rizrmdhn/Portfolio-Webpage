@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 
 
 function DropMenu() {
@@ -14,11 +15,11 @@ function DropMenu() {
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
-                    <Nav defaultActiveKey="/" className="flex-column">
-                        <Nav.Link href="/">About</Nav.Link>
-                        <Nav.Link href="/Project">Work</Nav.Link>
-                        <Nav.Link href="/Experience">Experience</Nav.Link>
-                        <Nav.Link href="/Social">Social</Nav.Link>
+                    <Nav defaultActiveKey="/" className="flex-column nav2">
+                        <Nav.Link><Link to="/" className='white'>About</Link></Nav.Link>
+                        <Nav.Link><Link to="/Project" className='white'>Work</Link></Nav.Link>
+                        <Nav.Link><Link to="/Experience" className='white'>Experience</Link></Nav.Link>
+                        <Nav.Link><Link to="/Social" className='white'>Social</Link></Nav.Link>
                     </Nav>
                 </div>
             </div>

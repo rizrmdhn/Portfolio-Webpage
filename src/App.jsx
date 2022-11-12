@@ -46,17 +46,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <DropMenu />
-        <Header />
         <HashRouter>
+          <DropMenu />
+          <Header />
           <Routes>
             <Route path="/" element={<ProfileBox />} />
             <Route path="/Project" element={<ProjectBox projects={this.state.projects} />} />
             <Route path="/Experience" element={<ExperienceBox experiences={this.state.experiences} />} />
             <Route path='/Social' element={<Social />} />
           </Routes>
+          <Footer />
         </HashRouter>
-        <Footer />
       </div>
     )
   }
