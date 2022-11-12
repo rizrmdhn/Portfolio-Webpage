@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ExperienceBox from "./ExperienceBox"
-import Social from "./Social";
-import Header from "./Header";
-import ProfileBox from "./ProfileBox";
-import ProjectBox from "./ProjectBox";
-import Footer from './Footer';
+import Social from "./Social.jsx";
+import Header from "./Header.jsx";
+import ProfileBox from "./ProfileBox.jsx";
+import ProjectBox from "./ProjectBox.js";
 
 
 function ItemContainer({ projects, experiences }) {
